@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASSWORD,
   },
 });
-//test
+
 export const sendContactEmail = async (contactData: any) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
